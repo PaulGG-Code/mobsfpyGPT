@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+.idea/
+*.egg-info/
+build/
+hdc.apk
+mobsfTest.py
+report.pdf
+mobsf_result.json
