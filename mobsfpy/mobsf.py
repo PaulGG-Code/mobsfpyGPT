@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 DEFAULT_SERVER = 'http://127.0.0.1:8000'
 
 # OpenAI settings
-OPENAI_API_KEY = 'OPENAI_API_KEY HERE'
+OPENAI_API_KEY = 'OPENAI_API_KEY'
 
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
 

@@ -14,6 +14,15 @@ into MobSF.
 _WARNING:_ At the moment this package is work in progress.
 So feedback is welcome!
 
+
+### Quick Mobsf Setup
+
+```
+docker pull opensecurity/mobile-security-framework-mobsf:latest
+docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+```
+
+
 ## Installation
 
 Currently, this package is not available via PyPI (maybe this will come at a later point of time).
@@ -21,7 +30,7 @@ But you can install directly from source on GitHub.
 
 Clone from GitHub and install using PIP:
 
-    git clone https://github.com/paulgg-code/mobsfpyGPT.git && cd mobsfpy
+    git clone https://github.com/paulgg-code/mobsfpyGPT.git && cd mobsfpyGPT
     pip install .
     
 If you want to install it for development, you can also install with the `-e` option. 
@@ -31,15 +40,15 @@ If you want to install it for development, you can also install with the `-e` op
 
 ## Usage
 
-`mobsfpy` can be used either as a standalone commandline tool or as a Python package which can be used in your own code.
+`mobsfpyGPT` can be used either as a standalone commandline tool or as a Python package which can be used in your own code.
+
+Change the OpenAI settings `OPENAI_API_KEY = 'OPENAI_API_KEY'` in `mobsf.py`
 
 ### CLI
 
 Hint: You will need an REST API key for your MobSF instance.
 It is displayed in the logs of MobSF or can be retrieved from `http://<Server-IP/Hostname>:8000/api_docs`.
 Best practice is to set the API-Key using `MOBSF_API_KEY` environment variable.
-
-
 
 ```bash
 # Upload an app to MobSF
